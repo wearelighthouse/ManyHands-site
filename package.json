@@ -1,0 +1,22 @@
+{
+  "name": "manyhands-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "browser-sync start --server --files css/**/*.css index.html --no-open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wearelighthouse/ManyHands-site.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wearelighthouse/ManyHands-site/issues"
+  },
+  "homepage": "https://github.com/wearelighthouse/ManyHands-site#readme",
+  "devDependencies": {
+    "browser-sync": "^2.27.9"
+  }
+}
