@@ -43,7 +43,7 @@ Editing in-browser at [github.dev/wearelighthouse/ManyHands-site](https://github
 4. Make your changes via any text editor ([VS Code](https://code.visualstudio.com/) or [Atom](https://atom.io/) recommended)
 
 5. Commit changes  
-  `git commit -am "Replace old event with info & link to 28/04/2022 event`
+  `git commit -am "Replace old event with info & link to 28/04/2022 event"`
   
 6. Push changes to this repo  
   `git push --set-up orgin content/event-april-28-2022`
