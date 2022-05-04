@@ -7,7 +7,7 @@
     "css": "tailwindcss --input ./css/main.css --output ./dist/styles.css",
     "css:watch": "tailwindcss --input ./css/main.css --output ./dist/styles.css --watch",
     "sync": "browser-sync start --server --files ./dist/styles.css index.html",
-    "build": "css",
+    "build": "npm-run-all css",
     "dev": "npm-run-all --parallel css sync"
   },
   "repository": {
