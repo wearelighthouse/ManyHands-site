@@ -3,7 +3,7 @@
 
 ## Local development
 
-It's possible to edit the site in-browser at [github.dev/wearelighthouse/ManyHands-site](https://github.dev/wearelighthouse/ManyHands-site), although it's better to make and test changes locally.
+Editing in-browser at [github.dev/wearelighthouse/ManyHands-site](https://github.dev/wearelighthouse/ManyHands-site) is possible, although it's better to make and test changes locally.
 
 
 ### Prerequisites
