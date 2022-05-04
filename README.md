@@ -11,4 +11,4 @@
   `npm i`
 
 4. Run hot-reloading dev server  
-  `npm run start`
+  `npm run dev`

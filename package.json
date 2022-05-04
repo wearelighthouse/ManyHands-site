@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "browser-sync start --server --files css/**/*.css index.html --no-open"
+    "css": "tailwindcss --input ./css/main.css --output ./dist/styles.css --watch",
+    "sync": "browser-sync start --server --files ./dist/styles.css index.html",
+    "dev": "npm-run-all --parallel css sync"
   },
   "repository": {
     "type": "git",
@@ -17,6 +19,8 @@
   },
   "homepage": "https://github.com/wearelighthouse/ManyHands-site#readme",
   "devDependencies": {
-    "browser-sync": "^2.27.9"
+    "browser-sync": "^2.27.9",
+    "npm-run-all": "^4.1.5",
+    "tailwindcss": "^3.0.24"
   }
 }
