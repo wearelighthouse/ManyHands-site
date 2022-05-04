@@ -15,8 +15,11 @@ jobs:
         run: |
           npm ci
           npm run build
+
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.3.3
         with:
           branch: live # The branch the action should deploy to.
-          folder: dist # The folder the action should deploy.
+          folder: . # The folder the action should deploy.
+          clean-exclude: |
+            dist/styles.css
