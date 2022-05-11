@@ -8,6 +8,8 @@
     "css:watch": "tailwindcss --input ./src/css/main.css --output ./dist/styles.css --watch",
     "html": "cpx src/**/*.html dist",
     "html:watch": "cpx src/**/*.html dist --watch",
+    "svg": "cpx src/assets/svg/*.svg dist",
+    "svg:watch": "cpx src/assets/svg/*.svg dist --watch",
     "sync": "browser-sync start --server dist --files dist",
     "build": "npm-run-all css html",
     "dev": "npm-run-all --parallel sync css:watch html:watch"
