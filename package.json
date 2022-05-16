@@ -8,12 +8,14 @@
     "css:watch": "tailwindcss --input ./src/css/main.css --output ./dist/styles.css --watch",
     "html": "cpx src/**/*.html dist",
     "html:watch": "cpx src/**/*.html dist --watch",
+    "img": "cpx src/assets/img/*.{png,jpg,webp} dist/assets/img",
+    "img:watch": "cpx src/assets/img/*.{png,jpg,webp} dist/assets/img --watch",
     "svg": "svgo --folder src/assets/svg/ -o ./dist/assets/svg --quiet",
     "svg:watch": "chokidar src/assets/svg/*.svg -c 'svgo --input {path} --output dist/assets/svg'",
     "svg:build-watch": "npm-run-all svg svg:watch",
     "sync": "browser-sync start --server dist --files dist",
-    "build": "npm-run-all clean css html svg",
-    "watch": "npm-run-all --parallel --silent sync css:watch html:watch svg:build-watch"
+    "build": "npm-run-all clean css html img svg",
+    "watch": "npm-run-all --parallel --silent sync css:watch html:watch img:watch svg:build-watch"
   },
   "repository": {
     "type": "git",
