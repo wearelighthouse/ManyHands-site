@@ -1,16 +1,21 @@
 {
   "name": "manyhands-site",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
+    "clean": "del-cli dist",
     "css": "tailwindcss --input ./src/css/main.css --output ./dist/styles.css",
     "css:watch": "tailwindcss --input ./src/css/main.css --output ./dist/styles.css --watch",
     "html": "cpx src/**/*.html dist",
     "html:watch": "cpx src/**/*.html dist --watch",
+    "img": "cpx src/assets/img/*.{png,jpg,webp} dist/assets/img",
+    "img:watch": "cpx src/assets/img/*.{png,jpg,webp} dist/assets/img --watch",
+    "svg": "svgo --folder src/assets/svg/ -o ./dist/assets/svg --quiet",
+    "svg:watch": "chokidar src/assets/svg/*.svg -c 'svgo --input {path} --output dist/assets/svg'",
+    "svg:build-watch": "npm-run-all svg svg:watch",
     "sync": "browser-sync start --server dist --files dist",
-    "build": "npm-run-all css html",
-    "dev": "npm-run-all --parallel sync css:watch html:watch"
+    "build": "npm-run-all clean css html img svg",
+    "watch": "npm-run-all --parallel --silent sync css:watch html:watch img:watch svg:build-watch"
   },
   "repository": {
     "type": "git",
@@ -23,8 +28,11 @@
   "homepage": "https://wearelighthouse.github.io/ManyHands-site/",
   "devDependencies": {
     "browser-sync": "^2.27.9",
+    "chokidar-cli": "^3.0.0",
     "cpx": "^1.5.0",
+    "del-cli": "^4.0.1",
     "npm-run-all": "^4.1.5",
+    "svgo": "^2.8.0",
     "tailwindcss": "^3.0.24"
   }
 }
