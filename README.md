@@ -3,7 +3,7 @@
 
 ## Local development
 
-Editing in-browser at [github.dev/wearelighthouse/ManyHands-site](https://github.dev/wearelighthouse/ManyHands-site) is possible, although it's better to make and test changes locally.
+Editing can be done in-browser at [github.dev/wearelighthouse/ManyHands-site](https://github.dev/wearelighthouse/ManyHands-site), however running the site and viewing changes pre-deployment requires __local development__.
 
 
 ### Prerequisites
@@ -22,10 +22,10 @@ Editing in-browser at [github.dev/wearelighthouse/ManyHands-site](https://github
   `cd ManyHands-site`
 
 3. Install dependencies  
-  `npm i`
+  `npm install`
 
 4. Run hot-reloading dev server (this will open up a web browser at localhost:3000)  
-  `npm run dev`
+  `npm run watch`
 
 
 ### Making changes
