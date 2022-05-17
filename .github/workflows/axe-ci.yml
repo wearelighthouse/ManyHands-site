@@ -13,9 +13,9 @@ jobs:
       - name: Install and Build 🔧
         run: |
           npm ci
-          npm run watch & npx wait-on http://localhost:3000
+          npm run start & npx wait-on http://localhost
 
       - name: Run axe
         run: |
           npm install -g @axe-core/cli
-          axe http://localhost:3000 --exit
+          axe http://localhost --exit
