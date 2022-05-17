@@ -14,6 +14,17 @@ module.exports = {
       'sailec': ['Sailec-Bold, sans-serif'],
       'tiempos': ['Tiempos Headline, sans-serif'],
     },
+
+    rotate: {
+      '15': '-15.96deg',
+      '5': '5.19deg'
+    },
+
+    screens: {
+      'mobile': '375px',
+      'tablet': '768px',
+      'desktop': '1440px',
+    },
   },
   plugins: [],
 }
