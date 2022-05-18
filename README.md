@@ -3,7 +3,7 @@
 
 ## Local development
 
-Editing in-browser at [github.dev/wearelighthouse/ManyHands-site](https://github.dev/wearelighthouse/ManyHands-site) is possible, although it's better to make and test changes locally.
+Editing can be done in-browser at [github.dev/wearelighthouse/ManyHands-site](https://github.dev/wearelighthouse/ManyHands-site), however running the site and viewing changes pre-deployment requires __local development__.
 
 
 ### Prerequisites
@@ -22,33 +22,29 @@ Editing in-browser at [github.dev/wearelighthouse/ManyHands-site](https://github
   `cd ManyHands-site`
 
 3. Install dependencies  
-  `npm i`
+  `npm install`
 
 4. Run hot-reloading dev server (this will open up a web browser at localhost:3000)  
-  `npm run dev`
+  `npm run watch`
 
 
 ### Making changes
 
-1. Make sure you're on the `main` branch and you've pulled any recent changes  
-  `git checkout main`  
-  `git pull`
-
-2. Checkout a new `feature/` `content/` or `fix/` branch, e.g.  
+1. Checkout a new `feature/` `content/` or `fix/` branch, e.g.  
   `git checkout -b content/event-april-28-2022`
   
-3. Start up the local dev environment (if it's not running already)  
+2. Start up the local dev environment (if it's not running already)  
   `npm run dev`
   
-4. Make your changes via any text editor ([VS Code](https://code.visualstudio.com/) or [Atom](https://atom.io/) recommended)
+3. Make your changes via any text editor ([VS Code](https://code.visualstudio.com/) or [Atom](https://atom.io/) recommended)
 
-5. Commit changes  
+4. Commit changes  
   `git commit -am "Replace old event with info & link to 28/04/2022 event"`
   
-6. Push changes to this repo  
+5. Push changes to this repo  
   `git push --set-up orgin content/event-april-28-2022`
   
-7. [Create a new Pull Request on GitHub](https://github.com/wearelighthouse/ManyHands-site/pulls) for your branch  
+6. [Create a new Pull Request on GitHub](https://github.com/wearelighthouse/ManyHands-site/pulls) for your branch  
 
 
 ### Deployment
