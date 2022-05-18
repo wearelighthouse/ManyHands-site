@@ -15,6 +15,15 @@ module.exports = {
       'tiempos': ['Tiempos Headline, sans-serif'],
     },
 
+    fontSize: {
+      'lg': '1.125rem',
+      'xl': '1.25rem',
+      '2xl': '1.5rem',
+      '4xl': '2.125rem',
+      '5xl': '3rem',
+      '6xl': '3.75rem',
+    },
+
     rotate: {
       '15': '-15.96deg',
       '5': '5.19deg'
@@ -23,7 +32,7 @@ module.exports = {
     screens: {
       'mobile': '375px',
       'tablet': '768px',
-      'desktop': '1440px',
+      'desktop': '1035px',
     },
   },
   plugins: [],
