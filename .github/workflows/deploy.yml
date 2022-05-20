@@ -14,10 +14,10 @@ jobs:
       - name: Install and Build 🔧
         run: |
           npm ci
-          npm run build
           cd src/assets/font
           wget -O fonts.zip https://drive.google.com/uc?export=download\&id=1sJCRhTucWoYCEY6XtXMGOUK-mBtOQEyB
           unzip fonts.zip -P ${{ secrets.FONT_PASSWORD }}
+          npm run build
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.3.3
