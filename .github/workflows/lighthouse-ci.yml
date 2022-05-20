@@ -16,7 +16,7 @@ jobs:
           npm ci
           cd src/assets/font
           wget -O fonts.zip https://drive.google.com/uc?export=download\&id=1sJCRhTucWoYCEY6XtXMGOUK-mBtOQEyB
-          unzip fonts.zip -P ${{ secrets.FONT_PASSWORD }}
+          unzip -P ${{ secrets.FONT_PASSWORD }} fonts.zip
           npm run build
 
       - name: Run Lighthouse CI
