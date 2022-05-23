@@ -49,3 +49,9 @@
         line-height: 28px;
     }
 }
+
+.how-it-work-header__lists {
+    @media screen and (min-width: 768px) {
+       flex-direction: row;
+    }
+}
