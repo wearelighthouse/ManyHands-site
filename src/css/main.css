@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.o-section-clip--ramp-bottom-right {
+    clip-path: polygon(0 0,100% 0,100% calc(100% - 5vw - 14px),77% calc(100% - 5vw - 14px),0 100%,0 0);
+}
