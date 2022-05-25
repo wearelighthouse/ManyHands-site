@@ -16,8 +16,8 @@ module.exports = {
     },
 
     fontFamily: {
-      'sailec': ['Sailec-Bold, sans-serif'],
-      'tiempos': ['Tiempos Headline, sans-serif'],
+      'sailec': ['Sailec, sans-serif'],
+      'tiempos': ['Tiempos, serif'],
     },
 
     fontSize: {
