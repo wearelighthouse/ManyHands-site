@@ -21,7 +21,7 @@
     "sync:headless": "browser-sync start --server dist --files dist --no-notify --no-open --no-ui",
     "build": "npm-run-all clean css html font img svg",
     "start": "npm-run-all build sync:headless",
-    "watch": "npm-run-all --parallel --silent sync font css:watch html:watch img:watch svg:build-watch"
+    "watch": "npm-run-all --parallel sync font css:watch html:watch img:watch svg:build-watch"
   },
   "repository": {
     "type": "git",
