@@ -5,3 +5,12 @@
 .o-section-clip--ramp-bottom-right {
     clip-path: polygon(0 0,100% 0,100% calc(100% - 5vw - 14px),77% calc(100% - 5vw - 14px),0 100%,0 0);
 }
+
+.button {
+  @apply bg-pink text-white text-2xl font-medium rounded;
+  padding-inline: 2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 5rem;
+}
