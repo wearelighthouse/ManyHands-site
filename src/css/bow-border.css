@@ -4,8 +4,9 @@
 
 .bow-border::before,
 .bow-border::after {
-  @apply absolute inset-x-4 inset-y-1 border-2 border-smoke/10 rounded-lg;
+  @apply absolute inset-x-3 inset-y-1 border-2 border-smoke/10 rounded-lg;
   content: '';
+  z-index: -1;
 }
 
 .bow-border::before {
