@@ -16,8 +16,13 @@
   </style>
 </head>
 
+<<<<<<< HEAD
 <body>
   <header class="bg-mimosa tablet:m-4 px-4 tablet:px-16 py-10 tablet:pb-20 desktop:pb-32 o-section-clip--ramp-bottom-right">
+=======
+<body class="tablet:m-4">
+  <header class="bg-mimosa px-4 tablet:px-16 py-10 tablet:pb-20 desktop:pb-32 o-section-clip--ramp-bottom-right">
+>>>>>>> main
 
     <div class="text-center">
       <a href="/" aria-label="Home">
@@ -55,6 +60,63 @@
   </header>
 
   <main>
+    <section class="px-4 py-[5rem] text-center max-w-6xl mx-auto">
+      <h2 class="font-tiempos font-bold text-2xl tablet:text-3xl desktop:text-3.5xl text-smoke pb-8 tablet:pb-10 desktop:pb-[60px]">How it works</h2>
+      <ol class="flex flex-col gap-6 tablet:flex-row font-sailec text-lg text-smoke desktop:text-2xl">
+        <li>
+          <div class="mx-auto flex justify-center items-center w-[64px] h-[64px] desktop:w-[96px] desktop:h-[96px]">
+            <img
+              class="w-[41px] desktop:w-[61px] h-[46px] desktop:h-[68px]"
+              src="./assets/svg/waving-hand.svg"
+              width="61px"
+              height="68px"
+              loading="lazy"
+              alt="Waving hand">
+          </div>
+          <h3 class="font-medium pt-5">1. Say hi</h3>
+          <p class="font-normal">Say hellos and hear about this session’s product issue</p>
+        </li>
+        <li>
+          <div class="mx-auto flex justify-center items-center w-[96px] h-[64px] desktop:w-[144px] desktop:h-[96px]">
+            <img
+              class="w-[79px] desktop:w-[118px] h-[50px] desktop:h-[75px]"
+              src="./assets/svg/raising-hands.svg"
+              width="118px"
+              height="75px"
+              loading="lazy"
+              alt="Raising hand">
+          </div>
+          <h3 class="font-medium pt-5">2. Brainstorm</h3>
+          <p class="font-normal">Get into groups to generate ideas with your new best mates</p>
+        </li>
+        <li>
+          <div class="mx-auto flex justify-center items-center w-[64px] h-[64px] desktop:w-[96px] desktop:h-[96px]">
+            <img
+              class="w-[30px] desktop:w-[45px] h-[48px] desktop:h-[72px]"
+              src="./assets/svg/hand-point-up.svg"
+              width="45px"
+              height="72px"
+              loading="lazy"
+              alt="Hand pointing up">
+          </div>
+          <h3 class="font-medium pt-5">3. Present</h3>
+          <p class="font-normal">Present back for discussion and iteration on concepts</p>
+        </li>
+        <li>
+          <div class="mx-auto flex justify-center items-center w-[64px] h-[64px] desktop:w-[96px] desktop:h-[96px]">
+            <img
+              class="w-[32px] desktop:w-[48px] h-[52px] desktop:h-[77px]"
+              src="./assets/svg/peace-hand-sing.svg"
+              width="48px"
+              height="77px"
+              loading="lazy"
+              alt="Peace hand sign">
+          </div>
+          <h3 class="font-medium pt-5"> 4. Practice</h3>
+          <p class="font-normal">Put ideas into practice and celebrate success 🍾</p>
+        </li>
+      </ol>
+    </section>
 
     <section id="next-event" class="flex flex-col items-center py-16 px-4">
       <h2 class="font-tiempos text-4xl font-semibold mb-12">Next event</h2>
@@ -89,17 +151,17 @@
           </div>
         </div>
       </div>
+
+      <svg width="0" height="0" aria-hidden="true">
+        <filter id="filter-smooth">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur" />
+          <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 9 -4" result="goo" />
+          <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
+        </filter>
+      </svg>
     </section>
   </main>
 
 </body>
-
-<svg width="0" height="0" aria-hidden="true">
-  <filter id="filter-smooth">
-    <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur" />
-    <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 9 -4" result="goo" />
-    <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
-  </filter>
-</svg>
 
 </html>
