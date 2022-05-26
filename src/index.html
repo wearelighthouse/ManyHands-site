@@ -16,56 +16,76 @@
   </style>
 </head>
 
-<body class="tablet:m-4">
-  <header class="bg-mimosa px-4 tablet:px-16 py-10 tablet:pb-20 desktop:pb-32 o-section-clip--ramp-bottom-right">
+<body>
+  <header class="bg-mimosa px-6 pt-14 tablet:px-16 pb-20 desktop:pb-32 o-section-clip--ramp-bottom-right tablet:m-4 text-center">
+    <a href="/" aria-label="Home">
+      <img class="mx-auto" src="./assets/svg/manyhands-logo.svg" alt="ManyHands site" width="188px" height="34px">
+    </a>
 
-    <div class="text-center">
-      <a href="/" aria-label="Home">
-        <img class="mx-auto" src="./assets/svg/manyhands-logo.svg" alt="ManyHands site" style="width: 188px; height: 34px;">
-      </a>
+    <h1 class="h1 mx-auto max-w-[22rem] tablet:max-w-none mt-10 mb-6">A collaborative <br class="hidden tablet:inline">event to solve real-<br class="hidden tablet:inline">world UX problems</h1>
 
-      <h1 class="mx-auto font-tiempos max-w-[22rem] tablet:max-w-none font-bold text-4xl tablet:text-5xl desktop:text-6xl text-smoke pt-11 pb-5">A collaborative <br class="hidden tablet:inline">event to solve real-<br class="hidden tablet:inline">world UX problems</h1>
-
-      <div class="image-container flex justify-center items-center gap-12">
-        <div class="hidden tablet:block relative border-8 desktop:border-10 border-white rounded-3xl rotate-[-15deg]">
-          <img class="rounded-2xl" src="./assets/img/meet-screenshot-a.webp" width="218px" height="149px" alt="">
-          <div class="absolute right-0 bottom-0 translate-x-1/2 translate-y-1/2 rotate-[15deg]">
-            <img class="max-w-[42px] desktop:max-w-[84px] translate-y-[-6px]" src="./assets/svg/point-up.svg" alt="">
-          </div>
-        </div>
-
-        <div class="w-full max-w-[18rem] tablet:max-w-[38rem] tablet:basis-3/4">
-          <p class="font-sailec font-normal text-xg tablet:text-xl desktop:text-2xl text-smoke pb-12 tablet:pb-8">We’re building a community of UX leaders with a passion for helping solve each other’s product issues. </p>
-          <div class="relative hidden tablet:flex justify-center">
-            <img class="absolute top-[-15%] w-[25px] -translate-x-1/2 desktop:top-0 desktop:w-[37px]" src="./assets/svg/union.svg" alt="">
-            <img src="./assets/svg/vector-6.svg" alt="">
-          </div>
-        </div>
-
-        <div class="hidden tablet:block relative border-8 desktop:border-10 border-white rounded-3xl rotate-[15deg]">
-          <img class="rounded-2xl" src="./assets/img/meet-screenshot-b.webp" width="247px" height="152px" alt="">
-          <div class="absolute left-0 bottom-0 -translate-x-1/2 translate-y-1/2 rotate-[-15deg]">
-            <img class="tablet:max-w-[42px] desktop:max-w-[84px] translate-y-[-6px]" src="./assets/svg/peace.svg" alt="">
-          </div>
+    <div class="image-container flex justify-center items-center gap-14">
+      <div class="hidden tablet:block relative border-8 desktop:border-10 border-white rounded-3xl rotate-[-15deg]">
+        <img class="rounded-2xl" src="./assets/img/meet-screenshot-a.webp" width="218px" height="149px" alt="">
+        <div class="absolute right-0 bottom-0 translate-x-1/2 translate-y-1/2 rotate-[15deg]">
+          <img
+            class="max-w-[42px] desktop:max-w-[82px] translate-y-[-6px]"
+            src="./assets/svg/point-up.svg"
+            alt=""
+            width="82px"
+            height="82px"
+          >
         </div>
       </div>
 
-    </div>
+      <div class="w-full max-w-[18rem] tablet:max-w-[38rem] tablet:basis-3/4">
+        <p class="text-xg tablet:text-xl desktop:text-2xl">We’re building a community of UX leaders with a passion for helping solve each other’s product issues.</p>
 
+        <div class="relative hidden tablet:flex justify-center mt-8 desktop:mt-16">
+          <img
+            class="absolute top-[-15%] w-[25px] -translate-x-1/2 desktop:top-0 desktop:w-[37px]"
+            src="./assets/svg/union.svg"
+            alt=""
+            width="42px"
+            height="61px"
+          >
+          <img
+            src="./assets/svg/vector-6.svg"
+            alt=""
+            width="609px"
+            height="89px"
+          >
+        </div>
+      </div>
+
+      <div class="hidden tablet:block relative border-8 desktop:border-10 border-white rounded-3xl rotate-[15deg]">
+        <img class="rounded-2xl" src="./assets/img/meet-screenshot-b.webp" width="247px" height="152px" alt="">
+        <div class="absolute left-0 bottom-0 -translate-x-1/2 translate-y-1/2 rotate-[-15deg]">
+          <img
+            class="tablet:max-w-[40px] desktop:max-w-[80px] translate-y-[-6px]"
+            src="./assets/svg/peace.svg"
+            alt=""
+            width="80px"
+            height="80px"
+          >
+        </div>
+      </div>
+    </div>
   </header>
- 
+
   <main>
     <section class="px-4 py-[5rem] text-center max-w-6xl mx-auto">
-      <h2 class="font-tiempos font-bold text-2xl tablet:text-3xl desktop:text-3.5xl text-smoke pb-8 tablet:pb-10 desktop:pb-[60px]">How it works</h2>
-      <ol class="flex flex-col gap-6 tablet:flex-row font-sailec text-lg text-smoke desktop:text-2xl">
+      <h2 class="h2">How it works</h2>
+
+      <ol class="flex flex-col gap-6 tablet:flex-row desktop:text-2xl">
         <li>
           <div class="mx-auto flex justify-center items-center w-[64px] h-[64px] desktop:w-[96px] desktop:h-[96px]">
-            <img 
-              class="w-[41px] desktop:w-[61px] h-[46px] desktop:h-[68px]" 
-              src="./assets/svg/waving-hand.svg" 
-              width="61px" 
-              height="68px" 
-              loading="lazy" 
+            <img
+              class="w-[41px] desktop:w-[61px] h-[46px] desktop:h-[68px]"
+              src="./assets/svg/waving-hand.svg"
+              width="61px"
+              height="68px"
+              loading="lazy"
               alt="Waving hand">
           </div>
           <h3 class="font-medium pt-5">1. Say hi</h3>
@@ -73,11 +93,11 @@
         </li>
         <li>
           <div class="mx-auto flex justify-center items-center w-[96px] h-[64px] desktop:w-[144px] desktop:h-[96px]">
-            <img 
-              class="w-[79px] desktop:w-[118px] h-[50px] desktop:h-[75px]" 
+            <img
+              class="w-[79px] desktop:w-[118px] h-[50px] desktop:h-[75px]"
               src="./assets/svg/raising-hands.svg"
-              width="118px" 
-              height="75px" 
+              width="118px"
+              height="75px"
               loading="lazy"
               alt="Raising hand">
           </div>
@@ -86,12 +106,12 @@
         </li>
         <li>
           <div class="mx-auto flex justify-center items-center w-[64px] h-[64px] desktop:w-[96px] desktop:h-[96px]">
-            <img 
-              class="w-[30px] desktop:w-[45px] h-[48px] desktop:h-[72px]" 
+            <img
+              class="w-[30px] desktop:w-[45px] h-[48px] desktop:h-[72px]"
               src="./assets/svg/hand-point-up.svg"
-              width="45px" 
-              height="72px" 
-              loading="lazy" 
+              width="45px"
+              height="72px"
+              loading="lazy"
               alt="Hand pointing up">
           </div>
           <h3 class="font-medium pt-5">3. Present</h3>
@@ -99,11 +119,11 @@
         </li>
         <li>
           <div class="mx-auto flex justify-center items-center w-[64px] h-[64px] desktop:w-[96px] desktop:h-[96px]">
-            <img 
-              class="w-[32px] desktop:w-[48px] h-[52px] desktop:h-[77px]" 
-              src="./assets/svg/peace-hand-sing.svg" 
-              width="48px" 
-              height="77px" 
+            <img
+              class="w-[32px] desktop:w-[48px] h-[52px] desktop:h-[77px]"
+              src="./assets/svg/peace-hand-sing.svg"
+              width="48px"
+              height="77px"
               loading="lazy"
               alt="Peace hand sign">
           </div>
@@ -111,6 +131,57 @@
           <p class="font-normal">Put ideas into practice and celebrate success 🍾</p>
         </li>
       </ol>
+    </section>
+
+    <section id="next-event" class="flex flex-col items-center py-16 px-4">
+      <h2 class="h2">Next event</h2>
+
+      <div class="max-w-[31rem] drop-shadow-glow">
+        <div class="filter-smooth flex flex-col">
+          <div class="scooped-corners bg-white p-3">
+            <div class="filter-smooth">
+              <div class="scooped-corners bg-mimosa px-4 tablet:px-14 pt-16 pb-28 clip-bottom-8 flex flex-col gap-20">
+                <time datetime="2022-04-28" class="flex flex-col items-center bow-border px-4 py-2">
+                  <div>Thursday</div>
+                  <div class="font-tiempos text-5xl font-semibold">28<sup class="font-lg">th</sup> April</div>
+                  <div>Starts at 6pm, UK time</div>
+                </time>
+
+                <img src="./assets/img/event-logo-ux-processes.png" width="352px" height="124px" alt="ManyHands on UX processes" class="w-[352px] h-auto mx-auto">
+              </div>
+            </div>
+          </div>
+
+          <div class="ticket-divider z-10 relative flex items-center justify-center">
+            <img
+              src="./assets/svg/point-down-back.svg"
+              class="absolute -translate-y-4"
+              alt="Backhand index finger pointing down"
+              width="100px"
+              height="100pc"
+            >
+          </div>
+
+          <div class="scooped-corners bg-white flex flex-col text-center px-14 pt-12 pb-6 gap-3">
+            <a class="button" href="/placeholder-ticket-link">
+              <span>Get your free ticket</span>
+              <svg width="42px" height="35px" viewbox="0 0 12 10" class="arrow" aria-hidden="true">
+                <path fill="none" stroke="currentColor" d="M2 5l8 0M7 2l3 3 l-3 3">
+              </svg>
+            </a>
+
+            <small class="text-lg">PS: dinner's on us 😋</small>
+          </div>
+        </div>
+      </div>
+
+      <svg width="0" height="0" aria-hidden="true">
+        <filter id="filter-smooth">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur" />
+          <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 9 -4" result="goo" />
+          <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
+        </filter>
+      </svg>
     </section>
   </main>
 

@@ -5,12 +5,20 @@ module.exports = {
       borderWidth: {
         '10': '10px',
       },
+
+      dropShadow: {
+        'glow': [
+          '0 4px 6px rgba(0, 0, 0, 0.12)',
+          '0 2px 60px rgba(241, 255, 188, 0.7)',
+        ],
+      },
     },
 
     colors: {
       'white': '#ffffff',
       'black': '#000000',
       'mimosa': '#F1FFBC',
+      'pink': '#E80070',
       'smoke': '#3A3A4E',
       'dark-gray': '#7E7E81',
     },
@@ -29,11 +37,6 @@ module.exports = {
       '4xl': '2.125rem',
       '5xl': '3rem',
       '6xl': '3.75rem',
-    },
-
-    rotate: {
-      '15': '-15.96deg',
-      '5': '5.19deg'
     },
 
     screens: {
