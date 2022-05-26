@@ -1,39 +1,21 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import 'reset';
+@import 'base';
+@import 'bow-border';
+@import 'button';
+@import 'ticket-divider';
+@import 'scooped-corners';
 
 .o-section-clip--ramp-bottom-right {
-    clip-path: polygon(0 0,100% 0,100% calc(100% - 5vw - 14px),77% calc(100% - 5vw - 14px),0 100%,0 0);
+  clip-path: polygon(0 0,100% 0,100% calc(100% - 5vw - 14px),77% calc(100% - 5vw - 14px),0 100%,0 0);
 }
 
-.button {
-  @apply bg-pink text-white text-2xl font-medium rounded;
-  padding-inline: 2rem;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  height: 5rem;
+.filter-smooth {
+  filter:url('#filter-smooth');
 }
 
-.scooped-corners {
-  outline: 1px solid red;
-  --stop-list: transparent var(--r, 40px), #000 0;
-  mask:
-    radial-gradient(circle at   0    0 , var(--stop-list)),
-    radial-gradient(circle at 100%   0 , var(--stop-list)),
-    radial-gradient(circle at   0  100%, var(--stop-list)),
-    radial-gradient(circle at 100% 100%, var(--stop-list));
-  mask-composite: intersect;
-}
-
-.fancy-goo-2 {
-  filter:url('#fancy-goo-2');
-}
-
-.fancy-goo-4 {
-  filter:url('#fancy-goo-4');
-}
-
-.fancy-goo-8 {
-  filter:url('#fancy-goo-8');
+.clip-bottom-8 {
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 8px), 0 calc(100% - 8px));
 }
