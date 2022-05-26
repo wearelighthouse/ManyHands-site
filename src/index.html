@@ -57,30 +57,61 @@
 
   <main>
 
-    <section id="next-event" class="flex flex-col items-center">
-      <h2 class="font-tiempos text-4xl font-semibold">Next event</h2>
-      <div class="max-w-[31rem]">
-        <div class="bg-mimosa p-10 flex flex-col">
-          <time datetime="2022-04-28" class="flex flex-col items-center border-2 border-smoke/10 rounded">
-            <div>Thursday</div>
-            <div class="font-tiempos text-5xl font-semibold">28<sup>th</sup> April</div>
-            <div>Starts at 6pm, UK time</div>
-          </time>
+    <section id="next-event" class="flex flex-col items-center py-16">
+      <h2 class="font-tiempos text-4xl font-semibold mb-12">Next event</h2>
 
-          <img src="./assets/img/event-logo-ux-processes.png" width="352px" height="124px" alt="ManyHands on UX processes">
-        </div>
+      <div class="max-w-[31rem] drop-shadow-glow">
+        <div class="fancy-goo-4">
+          <div class="">
+            <div class="scooped-corners bg-white p-3">
+              <div class="fancy-goo-2">
+                <div class="scooped-corners bg-mimosa p-10 flex flex-col items-center">
+                  <time datetime="2022-04-28" class="flex flex-col items-center border-2 border-smoke/10 rounded px-4 py-2">
+                    <div>Thursday</div>
+                    <div class="font-tiempos text-5xl font-semibold">28<sup>th</sup> April</div>
+                    <div>Starts at 6pm, UK time</div>
+                  </time>
 
-        <div class="flex flex-col items-center">
-          <a class="button" href="/placeholder-ticket-link">
-            <span>Get your free ticket</span>
-          </a>
+                  <img src="./assets/img/event-logo-ux-processes.png" width="352px" height="124px" alt="ManyHands on UX processes" class="px-8 py-16">
+                </div>
+              </div>
+            </div>
+          </div>
 
-          <small>PS: dinner's on us 😋</small>
+          <div class="">
+            <div class="scooped-corners bg-white flex flex-col items-center py-4 py-8 gap-2">
+              <a class="button" href="/placeholder-ticket-link">
+                <span>Get your free ticket</span>
+              </a>
+
+              <small class="text-lg">PS: dinner's on us 😋</small>
+            </div>
+          </div>
         </div>
       </div>
     </section>
   </main>
 
 </body>
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+  <defs>
+    <filter id="fancy-goo-2">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="blur" />
+      <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo2" />
+      <feComposite in="SourceGraphic" in2="goo2" operator="atop"/>
+    </filter>
+    <filter id="fancy-goo-4">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="4" result="blur" />
+      <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo4" />
+      <feComposite in="SourceGraphic" in2="goo4" operator="atop"/>
+    </filter>
+    <filter id="fancy-goo-8">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="8" result="blur" />
+      <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo8" />
+      <feComposite in="SourceGraphic" in2="goo8" operator="atop"/>
+    </filter>
+  </defs>
+</svg>
 
 </html>

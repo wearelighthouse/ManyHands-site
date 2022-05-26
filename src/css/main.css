@@ -14,3 +14,26 @@
   justify-content: center;
   height: 5rem;
 }
+
+.scooped-corners {
+  outline: 1px solid red;
+  --stop-list: transparent var(--r, 40px), #000 0;
+  mask:
+    radial-gradient(circle at   0    0 , var(--stop-list)),
+    radial-gradient(circle at 100%   0 , var(--stop-list)),
+    radial-gradient(circle at   0  100%, var(--stop-list)),
+    radial-gradient(circle at 100% 100%, var(--stop-list));
+  mask-composite: intersect;
+}
+
+.fancy-goo-2 {
+  filter:url('#fancy-goo-2');
+}
+
+.fancy-goo-4 {
+  filter:url('#fancy-goo-4');
+}
+
+.fancy-goo-8 {
+  filter:url('#fancy-goo-8');
+}

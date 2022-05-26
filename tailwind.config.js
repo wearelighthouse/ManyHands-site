@@ -5,6 +5,13 @@ module.exports = {
       borderWidth: {
         '10': '10px',
       },
+
+      dropShadow: {
+        'glow': [
+          '0 4px 10px rgba(0, 0, 0, 0.1)',
+          '0 2px 60px rgba(241, 255, 188, 0.7)',
+        ],
+      },
     },
 
     colors: {
