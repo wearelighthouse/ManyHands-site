@@ -23,5 +23,13 @@ jobs:
         with:
           source: http://localhost:3000
           destination: screenshot.png
+          path: test
           full-page: true
           width: 1280
+
+      - name: 'Comment on PR 💬'
+        uses: edunad/actions-image@v1.0.1
+        with:
+          path: '**/test/screenshot.png'
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          title: 'Screenshot'
