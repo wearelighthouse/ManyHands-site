@@ -1,11 +1,10 @@
-name: Lighthouse CI
+name: Screenshot
 on:
   pull_request:
     branches:
       - main
 jobs:
-  lhci:
-    name: Lighthouse
+  screenshot:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️
@@ -17,11 +16,12 @@ jobs:
           cd src/assets/font
           wget -O fonts.zip https://drive.google.com/uc?export=download\&id=1sJCRhTucWoYCEY6XtXMGOUK-mBtOQEyB
           unzip -P ${{ secrets.FONT_PASSWORD }} fonts.zip
-          npm run build
+          npm run start & npx wait-on http://localhost:3000
 
-      - name: Run Lighthouse CI 🕯️
-        run: |
-          npm install -g @lhci/cli@0.9.x
-          lhci autorun
-        env:
-          LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
+      - name: Screenshot Website
+        uses: swinton/screenshot-website@v1.x
+        with:
+          source: http://localhost:3000
+          destination: screenshot.png
+          full-page: true
+          width: 1280
