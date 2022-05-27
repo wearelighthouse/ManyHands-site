@@ -11,7 +11,7 @@
     "font:fetch": "bash ./src/assets/font/fetch.sh",
     "font:sailec": "cpx 'src/assets/font/sailec/*.woff2' ./dist/assets/font",
     "font:tiempos": "cpx 'src/assets/font/tiempos/*.woff2' ./dist/assets/font",
-    "font": "npm-run-all --parallel --continue-on-error font:sailec font:tiempos",
+    "font": "npm-run-all --parallel font:sailec font:tiempos",
     "img": "cpx src/assets/img/*.{png,jpg,webp} dist/assets/img",
     "img:watch": "cpx src/assets/img/*.{png,jpg,webp} dist/assets/img --watch",
     "svg": "svgo --folder src/assets/svg/ -o ./dist/assets/svg --quiet",
