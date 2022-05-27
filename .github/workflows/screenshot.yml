@@ -29,6 +29,10 @@ jobs:
       - name: 'Comment on PR 💬'
         uses: edunad/actions-image@v1.0.1
         with:
-          path: '**/screenshot.png'
+          path: './screenshot.png'
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           title: 'Screenshot'
+
+      - name: 'LS files to try to find things'
+        run: |
+          ls -la
