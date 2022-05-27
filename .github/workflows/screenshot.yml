@@ -18,13 +18,10 @@ jobs:
           unzip -P ${{ secrets.FONT_PASSWORD }} fonts.zip
           npm run start & npx wait-on http://localhost:3000
 
-      - name: Create screenshots
-        uses: alexrogalskiy/github-action-screenshots@master
+      - name: Screenshot Website
+        uses: swinton/screenshot-website@v1.x
         with:
-          url: 'http://localhost:3000'
-          name: 'screenshot'
-          path: 'screenshots'
-          extension: 'png'
-          encoding: 'binary'
-          fullPage: true
+          source: http://localhost:3000
+          destination: screenshot.png
+          full-page: true
           width: 1280
