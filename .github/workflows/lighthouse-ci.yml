@@ -19,7 +19,7 @@ jobs:
           unzip -P ${{ secrets.FONT_PASSWORD }} fonts.zip
           npm run build
 
-      - name: Run Lighthouse CI
+      - name: Run Lighthouse CI 🕯️
         run: |
           npm install -g @lhci/cli@0.9.x
           lhci autorun
