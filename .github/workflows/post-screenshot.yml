@@ -32,7 +32,7 @@ jobs:
       - name: 'Unzip artifact'
         run: unzip screenshot.zip
 
-      - name: 'Comment on PR'
+      - name: 'Comment on PR 💬'
         uses: edunad/actions-image@v1.0.1
         with:
           path: 'screenshot.png'
