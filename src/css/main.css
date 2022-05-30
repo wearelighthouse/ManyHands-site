@@ -20,3 +20,9 @@
 .clip-bottom-8 {
   clip-path: polygon(0 0, 100% 0, 100% calc(100% - 8px), 0 calc(100% - 8px));
 }
+
+.hr {
+  color: #DEDEE2;
+  min-width: 2px;
+  min-height: 2px;
+}
