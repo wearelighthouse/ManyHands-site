@@ -1,5 +1,5 @@
 .scooped-corners {
-  --stop-list: transparent 2.25rem, #000 0;
+  --stop-list: transparent 2.25rem, #000000 0;
   -webkit-mask:
     radial-gradient(circle at   0    0 , var(--stop-list)),
     radial-gradient(circle at 100%   0 , var(--stop-list)),
