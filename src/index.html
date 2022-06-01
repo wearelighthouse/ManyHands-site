@@ -74,11 +74,11 @@
   </header>
 
   <main>
-    <section class="px-4 py-[5rem] text-center max-w-6xl mx-auto">
+    <section class="px-4 my-24 desktop:my-32 text-center">
       <h2 class="h2">How it works</h2>
 
-      <ol class="flex flex-col gap-6 tablet:flex-row desktop:text-2xl">
-        <li>
+      <ol class="flex flex-col gap-6 tablet:flex-row desktop:text-2xl justify-center items-center tablet:items-stretch">
+        <li class="max-w-2xs">
           <div class="mx-auto flex justify-center items-center w-[64px] h-[64px] desktop:w-[96px] desktop:h-[96px]">
             <img
               class="w-[41px] desktop:w-[61px] h-[46px] desktop:h-[68px]"
@@ -86,12 +86,13 @@
               width="61px"
               height="68px"
               loading="lazy"
-              alt="Waving hand">
+              alt="Waving hand"
+            >
           </div>
           <h3 class="font-medium pt-5">1. Say hi</h3>
-          <p class="font-normal">Say hellos and hear about this session’s product issue</p>
+          <p>Say hellos and hear about this session’s product issue</p>
         </li>
-        <li>
+        <li class="max-w-2xs">
           <div class="mx-auto flex justify-center items-center w-[96px] h-[64px] desktop:w-[144px] desktop:h-[96px]">
             <img
               class="w-[79px] desktop:w-[118px] h-[50px] desktop:h-[75px]"
@@ -99,12 +100,13 @@
               width="118px"
               height="75px"
               loading="lazy"
-              alt="Raising hand">
+              alt="Raising hand"
+            >
           </div>
           <h3 class="font-medium pt-5">2. Brainstorm</h3>
-          <p class="font-normal">Get into groups to generate ideas with your new best mates</p>
+          <p>Get into groups to generate ideas with your new best mates</p>
         </li>
-        <li>
+        <li class="max-w-2xs">
           <div class="mx-auto flex justify-center items-center w-[64px] h-[64px] desktop:w-[96px] desktop:h-[96px]">
             <img
               class="w-[30px] desktop:w-[45px] h-[48px] desktop:h-[72px]"
@@ -112,12 +114,13 @@
               width="45px"
               height="72px"
               loading="lazy"
-              alt="Hand pointing up">
+              alt="Hand pointing up"
+            >
           </div>
           <h3 class="font-medium pt-5">3. Present</h3>
-          <p class="font-normal">Present back for discussion and iteration on concepts</p>
+          <p>Present back for discussion and iteration on concepts</p>
         </li>
-        <li>
+        <li class="max-w-2xs">
           <div class="mx-auto flex justify-center items-center w-[64px] h-[64px] desktop:w-[96px] desktop:h-[96px]">
             <img
               class="w-[32px] desktop:w-[48px] h-[52px] desktop:h-[77px]"
@@ -125,15 +128,16 @@
               width="48px"
               height="77px"
               loading="lazy"
-              alt="Peace hand sign">
+              alt="Peace hand sign"
+            >
           </div>
           <h3 class="font-medium pt-5"> 4. Practice</h3>
-          <p class="font-normal">Put ideas into practice and celebrate success 🍾</p>
+          <p>Put ideas into practice and celebrate success 🍾</p>
         </li>
       </ol>
     </section>
 
-    <section id="next-event" class="flex flex-col items-center py-16 px-4">
+    <section id="next-event" class="px-4 my-24 desktop:my-32 flex flex-col items-center">
       <h2 class="h2">Next event</h2>
 
       <div class="max-w-[31rem] drop-shadow-glow">
@@ -184,72 +188,163 @@
       </svg>
     </section>
 
-    <section class="bg-light-gray tablet:mx-4 my-16">
+    <section class="bg-light-gray tablet:m-4">
       <div class="max-w-6xl mx-auto text-center px-4 py-20">
-        <h2 class="h2">Featuring talent from&#8230</h2>
-  
+        <h2 class="h2">Featuring talent from&#8230;</h2>
+
         <ul class="flex flex-col gap-8 tablet:flex-row justify-between items-center pb-11">
           <li class="py-6">
             <img
-              class="mx-auto tablet:mx-0" 
-              src="./assets/img/automattic.png" 
+              class="mx-auto tablet:mx-0"
+              src="./assets/img/automattic.png"
               alt="Automattic"
               width="224px"
               height="68px"
             >
           </li>
           <li class="py-5">
-            <img 
+            <img
               class="mx-auto tablet:mx-0"
-              src="./assets/img/cocado.png" 
+              src="./assets/img/cocado.png"
               alt="Ocado"
               width="143px"
               height="68px"
             >
           </li>
           <li class="py-5">
-            <img 
+            <img
               class="mx-auto tablet:mx-0"
-              src="./assets/img/keep-calling.png" 
+              src="./assets/img/keep-calling.png"
               alt="Keep Calling"
               width="170px"
               height="68px"
             >
           </li>
           <li class="py-3">
-            <img 
+            <img
               class="mx-auto tablet:mx-0"
-              src="./assets/img/total-energies.png" 
+              src="./assets/img/total-energies.png"
               alt="Total Energies"
               width="60px"
               height="68px"
             >
           </li>
         </ul>
-  
+
         <hr class="text-gray">
-  
-        <blockquote class="pt-11">
-          <img 
-            class="mx-auto"
-            src="./assets/svg/stars.svg" 
+
+        <blockquote class="pt-11 grid justify-items-center gap-5">
+          <svg
+            viewBox="0 0 204 36"
             width="204px"
             height="36px"
-            alt="Five stars"
+            role="img"
+            aria-label="Five stars"
+            class="text-orange"
           >
-          <div class="max-w-xl mx-auto py-5">
-            <q class="font-normal text-lg tablet:text-xl desktop:text-2xl">Thank you for introducing me to these inspiring and interesting people! I really enjoyed it.</q>
+            <use href="./assets/svg/star.svg#a" x="0"></use>
+            <use href="./assets/svg/star.svg#a" x="42"></use>
+            <use href="./assets/svg/star.svg#a" x="84"></use>
+            <use href="./assets/svg/star.svg#a" x="126"></use>
+            <use href="./assets/svg/star.svg#a" x="168"></use>
+          </svg>
+
+          <div class="max-w-xl">
+            <q class="text-lg tablet:text-xl desktop:text-2xl">Thank you for introducing me to these inspiring and interesting people! I really enjoyed it.</q>
           </div>
 
           <footer>
-            <p class="pt-5">Magdalena R.  <span class="text-dark-gray">–  Product Designer</span></p>
+            <p>Magdalena R.  <span class="text-dark-gray">–  Product Designer</span></p>
           </footer>
         </blockquote>
-  
       </div>
     </section>
-  </main>
 
+    <section class="relative px-6 py-16 tablet:py-20 tablet:px-16 tablet:m-4 text-white flex flex-wrap gap-24 desktop:gap-x-48 items-center">
+      <div class="max-w-2xl">
+        <img
+          src="./assets/svg/lighthouse-background.svg"
+          class="absolute top-0 left-0 w-full h-full object-cover -z-10"
+          alt=""
+          width="1400px"
+          height="564px"
+          loading="lazy"
+        >
+
+        <h2>
+          <div class="mb-4 text-md">Brought to you by</div>
+
+          <a
+            href="https://wearelighthouse.com/"
+            rel="noopener"
+            class="inline-flex hover:bg-white/10 -m-2 p-2 rounded transition duration-300"
+          >
+            <svg
+              viewBox="0 0 150 38"
+              style="display: block; width: 150px; height: 38px;"
+              role="img"
+              aria-label="Lighthouse"
+            >
+              <use href="./assets/svg/lighthouse-logo.svg#a"></use>
+            </svg>
+          </a>
+        </h2>
+
+        <hr class="w-14 border-t-2 my-8">
+
+        <p class="font-medium text-3.5xl mobile:text-4xl tablet:text-5xl leading-tight">The <em class="text-smoke">number one UX / UI design partner</em> for digital product teams</p>
+
+        <a
+          href="https://wearelighthouse.com/"
+          rel="noopener"
+          class="inline-flex items-center text-link text-xl mt-6 mb-2"
+        >
+          <span>wearelighthouse.com</span>
+          <svg width="18px" height="15px" viewbox="0 0 12 10" class="arrow" aria-hidden="true">
+            <path fill="none" stroke="currentColor" d="M2 5l8 0M7 2l3 3 l-3 3">
+          </svg>
+        </a>
+      </div>
+
+      <a
+        href="https://clutch.co/profile/lighthouse-2"
+        rel="noopener"
+        class="hover:bg-white/10 -m-4 p-4 rounded transition duration-300"
+      >
+        <div>
+          <svg
+            viewBox="0 0 108 30"
+            width="108px"
+            height="30px"
+            role="img"
+            aria-label="Clutch"
+          >
+            <use href="./assets/svg/clutch-logo.svg#a"></use>
+          </svg>
+
+          <svg
+            viewBox="0 0 204 36"
+            width="102px"
+            height="18px"
+            role="img"
+            aria-label="Five stars"
+            class="text-mimosa mt-2"
+          >
+            <use href="./assets/svg/star.svg#a" x="0"></use>
+            <use href="./assets/svg/star.svg#a" x="42"></use>
+            <use href="./assets/svg/star.svg#a" x="84"></use>
+            <use href="./assets/svg/star.svg#a" x="126"></use>
+            <use href="./assets/svg/star.svg#a" x="168"></use>
+          </svg>
+        </div>
+
+        <div class="grid gap-2 leading-tight mt-4">
+          <p>Top 5 Global UX design agencies</p>
+          <p>Highest rated UK UX design agency</p>
+        </div>
+      </a>
+    </section>
+  </main>
 </body>
 
 </html>
