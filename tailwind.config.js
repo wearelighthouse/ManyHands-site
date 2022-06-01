@@ -12,6 +12,10 @@ module.exports = {
           '0 2px 60px rgba(241, 255, 188, 0.7)',
         ],
       },
+
+      maxWidth: {
+        '2xs': '18rem' // 288px
+      },
     },
 
     colors: {
