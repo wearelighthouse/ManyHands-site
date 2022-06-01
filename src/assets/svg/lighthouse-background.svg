@@ -4,9 +4,9 @@
     <path fill="url(#b)" fill-rule="evenodd" d="M0 0h1400v564H0V0Z" clip-rule="evenodd"/>
   </mask>
   <g mask="url(#c)">
-    <circle cx="1452" cy="1009" r="892" fill="url(#d)" opacity=".3" style="mix-blend-mode:luminosity" transform="rotate(-165 1452 1009)"/>
-    <path fill="url(#e)" d="M1633-41h894v894h-894z" opacity=".2" style="mix-blend-mode:luminosity" transform="rotate(45 1633 -41)"/>
-    <path fill="url(#f)" d="M1591 962h894v894h-894z" opacity=".4" style="mix-blend-mode:luminosity" transform="rotate(135 1591 962)"/>
+    <circle cx="1452" cy="1009" r="892" fill="url(#d)" opacity=".4" style="mix-blend-mode:luminosity" transform="rotate(-165 1452 1009)"/>
+    <path fill="url(#e)" d="M1633-41h894v894h-894z" opacity=".3" style="mix-blend-mode:luminosity" transform="rotate(45 1633 -41)"/>
+    <path fill="url(#f)" d="M1591 962h894v894h-894z" opacity=".5" style="mix-blend-mode:luminosity" transform="rotate(135 1591 962)"/>
     <circle cx="85" cy="-62" r="485" fill="url(#g)" opacity=".2" style="mix-blend-mode:luminosity"/>
   </g>
   <defs>
