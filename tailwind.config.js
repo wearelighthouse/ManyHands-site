@@ -23,6 +23,7 @@ module.exports = {
       'black': '#000000',
       'mimosa': '#F1FFBC',
       'pink': '#E80070',
+      'orange': '#FC895B',
       'smoke': '#3A3A4E',
       'dark-gray': '#717173',
       'gray': '#DEDEE2',
