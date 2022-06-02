@@ -1,5 +1,13 @@
 module.exports = {
   ci: {
+    collect: {
+      settings: {
+        blockedUrlPatterns: [
+          '*googletagmanager.com*',
+          '*snitcher.com*',
+        ],
+      },
+    },
     upload: {
       target: 'temporary-public-storage',
     },
