@@ -16,6 +16,10 @@ module.exports = {
       maxWidth: {
         '2xs': '18rem' // 288px
       },
+      gridTemplateRows: {
+        'smaller': '152px minmax(0, 1fr)',
+        'larger': '172px minmax(0, 1fr)',
+      }
     },
 
     colors: {
@@ -28,6 +32,7 @@ module.exports = {
       'dark-gray': '#717173',
       'gray': '#DEDEE2',
       'light-gray': '#F7F7F9',
+      'link-text': '#ff268b',
     },
 
     fontFamily: {

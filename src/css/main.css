@@ -21,3 +21,13 @@
 .clip-bottom-8 {
   clip-path: polygon(0 0, 100% 0, 100% calc(100% - 8px), 0 calc(100% - 8px));
 }
+
+.unorder-list li {
+  padding-left: 16px;
+}
+
+.unorder-list li::before {
+  content: "•";
+  padding-right: 8px;
+  color: currentColor;
+}
