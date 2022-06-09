@@ -23,6 +23,7 @@ module.exports = {
     },
 
     colors: {
+      'current': 'currentColor',
       'white': '#ffffff',
       'black': '#000000',
       'mimosa': '#F1FFBC',
