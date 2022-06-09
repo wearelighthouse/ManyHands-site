@@ -1,8 +1,8 @@
 .manyhands-hr {
-  @apply flex items-center justify-center text-light-gray border;
+  @apply flex items-center justify-center text-light-gray border overflow-visible;
 }
 
 .manyhands-hr::after {
-  @apply flex bg-current rounded-full p-3;
+  @apply flex bg-current rounded-full p-3 aspect-square;
   content: url('./assets/svg/horns.svg');
 }
