@@ -18,3 +18,11 @@
   clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
   transform: perspective(100px) rotateX(-8deg);
 }
+
+/* Safari-only hack to disable 3D transform as it breaks parent filters */
+@media not all and (min-resolution:.001dpcm) {
+  .bow-border::before,
+  .bow-border::after {
+    transform: none;
+  }
+}

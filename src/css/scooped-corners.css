@@ -5,6 +5,6 @@
     radial-gradient(circle at 100%   0 , var(--stop-list)),
     radial-gradient(circle at   0  100%, var(--stop-list)),
     radial-gradient(circle at 100% 100%, var(--stop-list));
-  -webkit-mask-composite: source-in;
+  -webkit-mask-composite: source-in, xor, xor, xor;
   mask-composite: intersect;
 }
