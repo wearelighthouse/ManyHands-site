@@ -33,7 +33,6 @@ module.exports = {
       'dark-gray': '#717173',
       'gray': '#DEDEE2',
       'light-gray': '#F7F7F9',
-      'link-text': '#ff268b',
     },
 
     fontFamily: {
