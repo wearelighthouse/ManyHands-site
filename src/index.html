@@ -388,6 +388,43 @@
       </a>
     </section>
   </main>
+
+  <footer class="px-6 pt-12 pb-6 tablet:py-5 tablet:px-16 tablet:m-4 text-md tablet:text-xl tablet:flex flex-wrap justify-between gap-9">
+    <div class="tablet:flex items-center gap-7">
+      <div class="flex items-center gap-7">
+        <a 
+          href="https://join.slack.com/t/wearemanyhands/shared_invite/zt-1abwsx493-XPrsrttoqUVH4rZk2VNXwg" 
+          class="bg-light-gray rounded-full p-4 hover:bg-gray transition"
+          target="_blank"
+        >
+          <img 
+            src="./assets/svg/slack-icon.svg" 
+            alt="Slack icon"
+            width="28px"
+            height="28px"
+          >
+        </a>
+        <a 
+          href="https://www.linkedin.com/company/manyhands-from-lighthouse/" 
+          class="bg-light-gray rounded-full p-4 hover:bg-gray transition"
+          target="_blank"
+        >
+          <img 
+            src="./assets/svg/linkedIn-icon.svg" 
+            alt="LinkedIn icon"
+            width="28px"
+            height="28px"
+          >
+        </a>
+      </div>
+      <p class="pt-5 tablet:pt-0 tablet:w-[436px]">ManyHands – collaborative events solving real-world UX issues</p>
+    </div>
+    <p class="text-dark-gray pt-12 tablet:pt-0">&copy; <span id="copyright"></span> Lighthouse London Studio Ltd</p>
+  </footer>
+
+  <script>
+   document.querySelector('#copyright').innerHTML = new Date().getFullYear();
+  </script>
 </body>
 
 </html>
