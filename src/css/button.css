@@ -1,5 +1,5 @@
 .button {
-  @apply bg-pink text-white text-2xl font-medium rounded gap-2 mobile:gap-6 px-2 mobile:px-4;
+  @apply bg-pink text-white text-2xl font-medium rounded gap-2 mobile:gap-6 px-4;
   display: inline-flex;
   align-items: center;
   justify-content: center;
