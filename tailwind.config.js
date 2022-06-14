@@ -17,8 +17,8 @@ module.exports = {
         '2xs': '18rem' // 288px
       },
       gridTemplateRows: {
-        'smaller': '152px minmax(0, 1fr)',
-        'larger': '172px minmax(0, 1fr)',
+        'smaller': '150px minmax(0, 1fr)',
+        'larger': '170px minmax(0, 1fr)',
       }
     },
 
