@@ -7,3 +7,15 @@
 .text-link:focus .arrow {
   transform: translateX(4px);
 }
+
+.slack-link {
+  outline-offset: 0.2em;
+  background-image: linear-gradient(transparent calc(100% - 0.07em), currentColor calc(100% - 0.07em));
+  background-repeat: no-repeat;
+  background-size: 0 100%;
+  transition: background-size .2s;
+}
+
+.slack-link:hover {
+  background-size: calc(100% - 1px) 100%;
+}
