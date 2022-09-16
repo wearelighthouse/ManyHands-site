@@ -25,7 +25,7 @@ Editing can be done in-browser at [github.dev/wearelighthouse/ManyHands-site](ht
   `npm install`
 
 4. Fetch fonts (optional - password in LH 1Pass)  
-  `npm run fonts:fetch`
+  `npm run font:fetch`
 
 5. Run hot-reloading dev server (this will open up a web browser at localhost:3000)  
   `npm run watch`
