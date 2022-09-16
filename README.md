@@ -37,7 +37,7 @@ Editing can be done in-browser at [github.dev/wearelighthouse/ManyHands-site](ht
   `git checkout -b content/event-april-28-2022`
 
 2. Start up the local dev environment (if it's not running already)  
-  `npm run dev`
+  `npm run watch`
 
 3. Make your changes via any text editor ([VS Code](https://code.visualstudio.com/) or [Atom](https://atom.io/) recommended)
 
