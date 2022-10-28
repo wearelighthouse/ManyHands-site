@@ -2,7 +2,7 @@ module.exports = {
   plugins: [
     require('postcss-import'),
     require('tailwindcss'),
-    require('postcss-prune-var')(),
     require('cssnano'),
+    require('postcss-css-variables')(),
   ],
 };
