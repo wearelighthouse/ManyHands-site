@@ -3,5 +3,6 @@ module.exports = {
     require('postcss-import'),
     require('tailwindcss'),
     require('cssnano'),
+    require('postcss-css-variables')(),
   ],
 };
