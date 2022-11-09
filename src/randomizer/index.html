@@ -32,6 +32,22 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-TGNB6QB');</script>
   <!-- End Google Tag Manager -->
+
+  <style>
+    .random {
+      line-height: 2;
+      height: 2em;
+      overflow: hidden;
+    }
+
+    .inner {
+      transition: transform 3s;
+    }
+
+    .button {
+      height: 2.5rem;
+    }
+  </style>
 </head>
 
 <body>
@@ -41,15 +57,22 @@
   <!-- End Google Tag Manager (noscript) -->
 
   <main class="min-h-screen grid">
-    <div class="grid bg-mimosa px-6 py-14 tablet:px-16 tablet:m-4 text-center">
-      <a href="/" aria-label="Home">
-        <img class="mx-auto" src="../assets/svg/manyhands-logo.svg" alt="Many Hands" width="188px" height="34px">
-      </a>
+    <div class="grid bg-mimosa px-6 py-14 max-tablet:pb-6 tablet:px-16 tablet:m-4 text-center">
+      <div class="flex justify-center items-start">
+        <a href="/" aria-label="Home">
+          <img class="mx-auto" src="../assets/svg/manyhands-logo.svg" alt="Many Hands" width="188px" height="34px">
+        </a>
+      </div>
 
-      <div>
-        <span class="random"></span>
-        <span class="h1 mx-auto max-w-[22rem] tablet:max-w-lg my-8">for</span>
-        <span class="random"></span>
+      <div class="max-tablet:grid content-start justify-center whitespace-nowrap self-center">
+        <span class="inline-grid relative h-[1.5em] random text-xl mobile:text-2xl desktop:text-4xl font-bold font-tiempos text-mimosa/75 bg-smoke px-2 tablet:text-right"><div class="inner"></div></span>
+        <span class="max-w-[22rem] tablet:max-w-lg my-2 tablet:my-8 moile:text-xl desktop:text-2xl font-semibold mx-auto">for</span>
+        <span class="inline-grid relative h-[1.5em] random text-xl mobile:text-2xl desktop:text-4xl font-bold font-tiempos text-mimosa/75 bg-smoke px-2 tablet:text-left"><div class="inner"></div></span>
+      </div>
+
+      <div class="flex items-end justify-end gap-4">
+        <button class="button reset">Reset</button>
+        <button class="button run">Run</button>
       </div>
     </div>
   </main>
