@@ -64,7 +64,7 @@ function runPlatform() {
     const selectedElement = [...innerElement1.children].find(childElement => childElement.innerText === selectedPlatform);
     selectedElement.style.transition = 'color .2s 3s';
     selectedElement.classList.add('text-mimosa');
-  }, 200);
+  }, 500);
 }
 
 function runAudience() {
@@ -74,7 +74,7 @@ function runAudience() {
     const selectedElement = [...innerElement2.children].find(childElement => childElement.innerText === selectedAudience);
     selectedElement.style.transition = 'color .2s 3s';
     selectedElement.classList.add('text-mimosa');
-  }, 3600);
+  }, 4000);
 }
 
 runPlatform();
