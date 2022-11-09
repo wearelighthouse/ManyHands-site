@@ -43,16 +43,8 @@ const randomisedPlatforms = [...shuffle(data.platforms.filter(a => a !== selecte
 ['&nbsp;', ...randomisedPlatforms, ...randomisedPlatforms].forEach((platform) => {
   const platformElement = document.createElement('div');
   platformElement.innerHTML = platform;
-
   innerElement1.appendChild(platformElement);
 });
-
-setTimeout(() => {
-  innerElement1.style.transform = `translateY(${-2 * (data.platforms.length)}em)`;
-  const selectedElement = [...innerElement1.children].find(childElement => childElement.innerText === selectedPlatform);
-  selectedElement.style.transition = 'color .2s 3s';
-  selectedElement.classList.add('text-mimosa');
-}, 100);
 
 const selectedAudience = params.get('audience') ?? data.audiences[Math.floor(Math.random() * data.audiences.length)];
 const randomisedAudiences = [...shuffle(data.audiences.filter(a => a !== selectedAudience)), selectedAudience];
@@ -60,41 +52,49 @@ const randomisedAudiences = [...shuffle(data.audiences.filter(a => a !== selecte
 ['&nbsp;', ...randomisedAudiences, ...randomisedAudiences].forEach((audience) => {
   const audienceElement = document.createElement('div');
   audienceElement.innerHTML = audience;
-
   innerElement2.appendChild(audienceElement);
 });
 
-setTimeout(() => {
-  innerElement2.style.transform = `translateY(${-2 * data.audiences.length}em)`;
-  const selectedElement = [...innerElement2.children].find(childElement => childElement.innerText === selectedAudience);
-  selectedElement.style.transition = 'color .2s 3s';
-  selectedElement.classList.add('text-mimosa');
-}, 3600);
-
-document.querySelector('.button.reset').addEventListener('click', () => {
-  innerElement1.style.transform = '';
-  const selectedElement1 = [...innerElement1.children].find(childElement => childElement.innerText === selectedPlatform);
-  selectedElement1.style.transition = 'color .2s';
-  selectedElement1.classList.remove('text-mimosa');
-
-  innerElement2.style.transform = '';
-  const selectedElement2 = [...innerElement2.children].find(childElement => childElement.innerText === selectedAudience);
-  selectedElement2.style.transition = 'color .2s';
-  selectedElement2.classList.remove('text-mimosa');
-});
-
-document.querySelector('.button.run').addEventListener('click', () => {
+function runPlatform() {
   setTimeout(() => {
-    innerElement1.style.transform = `translateY(${-2 * data.platforms.length}em)`;
+    innerElement1.style.transform = `translateY(${-2 * (data.platforms.length)}em)`;
     const selectedElement = [...innerElement1.children].find(childElement => childElement.innerText === selectedPlatform);
     selectedElement.style.transition = 'color .2s 3s';
     selectedElement.classList.add('text-mimosa');
   }, 100);
+}
 
+function runAudience() {
   setTimeout(() => {
     innerElement2.style.transform = `translateY(${-2 * data.audiences.length}em)`;
     const selectedElement = [...innerElement2.children].find(childElement => childElement.innerText === selectedAudience);
     selectedElement.style.transition = 'color .2s 3s';
     selectedElement.classList.add('text-mimosa');
   }, 3600);
+}
+
+runPlatform();
+runAudience();
+
+document.querySelector('.button.reset').addEventListener('click', () => {
+  const selectedElement1 = [...innerElement1.children].find(childElement => childElement.innerText === selectedPlatform);
+  const selectedElement2 = [...innerElement2.children].find(childElement => childElement.innerText === selectedAudience);
+  innerElement1.style.transform = '';
+  innerElement2.style.transform = '';
+  selectedElement1.style.transition = 'color .2s';
+  selectedElement2.style.transition = 'color .2s';
+  selectedElement1.classList.remove('text-mimosa');
+  selectedElement2.classList.remove('text-mimosa');
+});
+
+document.querySelector('.button.run').addEventListener('click', () => {
+  runPlatform();
+  runAudience();
+});
+
+document.querySelector('.button.overflow').addEventListener('click', () => {
+  randomElement1.classList.toggle('overflow-hidden');
+  innerElement1.classList.toggle('text-smoke');
+  randomElement2.classList.toggle('overflow-hidden');
+  innerElement2.classList.toggle('text-smoke');
 });
