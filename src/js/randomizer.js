@@ -64,7 +64,7 @@ function runPlatform() {
     const selectedElement = [...innerElement1.children].find(childElement => childElement.innerText === selectedPlatform);
     selectedElement.style.transition = 'color .2s 3s';
     selectedElement.classList.add('text-mimosa');
-  }, 500);
+  }, 0);
 }
 
 function runAudience() {
@@ -74,11 +74,13 @@ function runAudience() {
     const selectedElement = [...innerElement2.children].find(childElement => childElement.innerText === selectedAudience);
     selectedElement.style.transition = 'color .2s 3s';
     selectedElement.classList.add('text-mimosa');
-  }, 4000);
+  }, 3500);
 }
 
-runPlatform();
-runAudience();
+setTimeout(() => {
+  runPlatform();
+  runAudience();
+}, 1000);
 
 document.querySelector('.button.reset').addEventListener('click', () => {
   const selectedElement1 = [...innerElement1.children].find(childElement => childElement.innerText === selectedPlatform);
