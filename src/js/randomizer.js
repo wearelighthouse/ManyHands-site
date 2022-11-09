@@ -57,7 +57,6 @@ const randomisedAudiences = [...shuffle(data.audiences.filter(a => a !== selecte
 
 function runPlatform() {
   setTimeout(() => {
-    randomElement1.classList.add('text-mimosa/75');
     innerElement1.style.transform = `translateY(${-2 * (data.platforms.length)}em)`;
     const selectedElement = [...innerElement1.children].find(childElement => childElement.innerText === selectedPlatform);
     selectedElement.style.transition = 'color .2s 3s';
@@ -67,7 +66,6 @@ function runPlatform() {
 
 function runAudience() {
   setTimeout(() => {
-    randomElement2.classList.add('text-mimosa/75');
     innerElement2.style.transform = `translateY(${-2 * data.audiences.length}em)`;
     const selectedElement = [...innerElement2.children].find(childElement => childElement.innerText === selectedAudience);
     selectedElement.style.transition = 'color .2s 3s';
