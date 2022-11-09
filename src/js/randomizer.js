@@ -37,9 +37,6 @@ const innerElement1 = randomElement1.querySelector('.inner');
 const innerElement2 = randomElement2.querySelector('.inner');
 const params = new URLSearchParams(location.search);
 
-innerElement1.innerHTML = '';
-innerElement2.innerHTML = '';
-
 const selectedPlatform = params.get('platform') ?? data.platforms[Math.floor(Math.random() * data.platforms.length)];
 const randomisedPlatforms = [...shuffle(data.platforms.filter(a => a !== selectedPlatform)), selectedPlatform];
 
