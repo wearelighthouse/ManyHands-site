@@ -43,6 +43,7 @@ const randomisedPlatforms = [...shuffle(data.platforms.filter(a => a !== selecte
 ['&nbsp;', ...randomisedPlatforms, ...randomisedPlatforms].forEach((platform) => {
   const platformElement = document.createElement('div');
   platformElement.innerHTML = platform;
+  platformElement.classList.add('invisible');
   innerElement1.appendChild(platformElement);
 });
 
@@ -52,11 +53,13 @@ const randomisedAudiences = [...shuffle(data.audiences.filter(a => a !== selecte
 ['&nbsp;', ...randomisedAudiences, ...randomisedAudiences].forEach((audience) => {
   const audienceElement = document.createElement('div');
   audienceElement.innerHTML = audience;
+  audienceElement.classList.add('invisible');
   innerElement2.appendChild(audienceElement);
 });
 
 function runPlatform() {
   setTimeout(() => {
+    [...innerElement1.children].forEach(c => c.classList.remove('invisible'));
     innerElement1.style.transform = `translateY(${-2 * (data.platforms.length)}em)`;
     const selectedElement = [...innerElement1.children].find(childElement => childElement.innerText === selectedPlatform);
     selectedElement.style.transition = 'color .2s 3s';
@@ -66,6 +69,7 @@ function runPlatform() {
 
 function runAudience() {
   setTimeout(() => {
+    [...innerElement2.children].forEach(c => c.classList.remove('invisible'));
     innerElement2.style.transform = `translateY(${-2 * data.audiences.length}em)`;
     const selectedElement = [...innerElement2.children].find(childElement => childElement.innerText === selectedAudience);
     selectedElement.style.transition = 'color .2s 3s';
