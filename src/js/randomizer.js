@@ -100,7 +100,7 @@ document.querySelector('.button.run').addEventListener('click', () => {
 
 document.querySelector('.button.overflow').addEventListener('click', () => {
   randomElement1.classList.toggle('overflow-hidden');
-  innerElement1.classList.toggle('text-smoke');
   randomElement2.classList.toggle('overflow-hidden');
+  innerElement1.classList.toggle('text-smoke');
   innerElement2.classList.toggle('text-smoke');
 });
