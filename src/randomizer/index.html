@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang=en-GB>
+
+<head>
+  <meta charset="utf-8">
+  <title>ManyHands: The problem solving event for product people 🤘</title>
+  <meta name="description" content="A collaborative problem solving event for product pros. Work together on real-world UX problems online.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon-16x16.png">
+  <link rel="manifest" href="../site.webmanifest">
+  <script defer src="../js/randomizer.js"/>
+
+  <meta property="og:image" content="./assets/img/manyhands-preview.png" />
+	<meta property="og:image:width" content="1024" />
+	<meta property="og:image:height" content="538" />
+	<meta property="og:image:type" content="image/png" />
+
+  <style>
+    @font-face{font-family:Sailec;font-weight:500;src:url(../assets/font/39E20B_0_0.woff2);font-display:fallback}
+    @font-face{font-family:Sailec;font-weight:400;src:url(../assets/font/39E20B_2_0.woff2);font-display:fallback}
+    @font-face{font-family:Tiempos;font-weight:400;src:url(../assets/font/TiemposTextWeb-Regular.woff2);font-display:fallback}
+    @font-face{font-family:Tiempos;font-weight:600;src:url(../assets/font/TiemposTextWeb-Semibold.woff2);font-display:fallback}
+  </style>
+
+  <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-TGNB6QB');</script>
+  <!-- End Google Tag Manager -->
+
+  <style>
+    .random {
+      line-height: 2;
+      height: 2em;
+    }
+
+    .inner {
+      transition: transform 3s;
+    }
+
+    .button {
+      height: 2.5rem;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TGNB6QB"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <main class="min-h-screen grid">
+    <div class="grid bg-mimosa px-6 py-14 max-tablet:pb-6 tablet:px-16 tablet:m-4 text-center">
+      <div class="flex justify-center items-start">
+        <a href="/" aria-label="Home">
+          <img class="mx-auto" src="../assets/svg/manyhands-logo.svg" alt="Many Hands" width="188px" height="34px">
+        </a>
+      </div>
+
+      <div class="max-tablet:grid content-start justify-center whitespace-nowrap self-center">
+        <span class="inline-grid relative h-[1.5em] random text-xl mobile:text-2xl desktop:text-4xl font-bold font-tiempos text-mimosa/75 bg-smoke/95 px-2 overflow-hidden tablet:text-right"><div class="inner"></div></span>
+        <span class="max-w-[22rem] tablet:max-w-lg my-2 tablet:my-8 moile:text-xl desktop:text-2xl font-semibold mx-auto">for</span>
+        <span class="inline-grid relative h-[1.5em] random text-xl mobile:text-2xl desktop:text-4xl font-bold font-tiempos text-mimosa/75 bg-smoke/95 px-2 overflow-hidden tablet:text-left"><div class="inner"></div></span>
+      </div>
+
+      <div class="flex flex-wrap items-end justify-end content-end gap-4 static z-10">
+        <button class="button overflow">Toggle Overflow</button>
+        <button class="button reset">Reset</button>
+        <button class="button run">Run</button>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
