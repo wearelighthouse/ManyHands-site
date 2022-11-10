@@ -14,6 +14,7 @@ module.exports = {
     assert: {
       preset: 'lighthouse:no-pwa',
       assertions: {
+        'color-contrast': 'warn',
         'non-composited-animations': 'warn',
         'csp-xss': 'warn',
       },

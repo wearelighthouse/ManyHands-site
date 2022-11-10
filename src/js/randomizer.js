@@ -80,7 +80,7 @@ function runAudience() {
 setTimeout(() => {
   runPlatform();
   runAudience();
-}, 1000);
+}, 800);
 
 document.querySelector('.button.reset').addEventListener('click', () => {
   const selectedElement1 = [...innerElement1.children].find(childElement => childElement.innerText === selectedPlatform);
