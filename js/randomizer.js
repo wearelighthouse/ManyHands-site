@@ -7,6 +7,7 @@ const data = {
     'social network',
     'support',
     'dating app',
+    'travel and transport',
     'services',
     'banking',
     'HR platform',
@@ -26,7 +27,7 @@ const data = {
     'celebrities',
     'librarians',
     'artists',
-    'secret agencts',
+    'secret agents',
     'crime bosses',
   ],
 };
